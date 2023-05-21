@@ -1,13 +1,215 @@
 body {
   font-family: "Roboto", sans-serif;
+  background: #f5f5f5;
+  color: #2c2c2c;
   font-weight: 400;
   font-size: 16px;
+  font-style: normal;
+  line-height: 1.5;
+  width: 1280px;
+  margin: auto;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
 }
 
 .link {
   text-decoration: none;
+  color: #2c2c2c;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background: #fefefe;
+  box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.logo-img {
+  margin: 10px 735px 10px 16px;
+}
+
+.header-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+}
+
+.nav-menu {
+  margin-left: 28px;
+}
+
+.green-link {
+  color: #bbf330;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+}
+
+.btn-green {
+  margin: 20px 16px 20px 30px;
+  width: 98px;
+  height: 32px;
+  background: #bbf330;
+  border-radius: 30px;
+  border: #bbf330;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 150%;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+/* ! Hero Section */
+.hero-title {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+/* !           Offering Section */
+.section-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.offering-text {
+  font-size: 14px;
+}
+
+.btn-white {
+  width: 98px;
+  height: 32px;
+  background: #ffffff;
+  border-radius: 30px;
+  border: 2px solid #7eb101;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2c2c2c;
+}
+
+/* !         Customers Section  */
+.customer-comment {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.customer-name {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.customer-psn {
+  font-size: 14px;
+}
+
+/* !         Subscribe Section */
+
+.input-field {
+  width: 394px;
+  height: 42px;
+  padding-left: 11px;
+  background: #fefefe;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #505050;
+}
+
+/* !                  Footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fefefe;
+  background-image: url("./footer-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+}
+
+.footer-top {
+  padding: 100px 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom {
+  padding: 80px 16px 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-field-footer {
+  width: 279px;
+  height: 42px;
+  padding-left: 12px;
+  margin: 12px;
+  background: #fefefe;
+  border: 0.854167px solid #ffe550;
+  border-radius: 30px;
+  font-size: 12px;
+  color: #505050;
+}
+
+.subscribe-box-text {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.subscribe-box-sub-text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.footer-link-green {
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration-line: underline;
+  color: #7eb101;
+}
+
+.copyright {
+  font-size: 12px;
+  line-height: 14px;
 }

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Fonts -->
+    <!-- ? Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,7 +13,7 @@
       rel="stylesheet"
     />
 
-    <!-- modern-nomalize -->
+    <!-- ? ***** modern-normalize ****** -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -22,42 +22,44 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- styles -->
+    <!-- * styles -->
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Food Sta</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <!--!           Header -->
+    <header class="header">
+      <nav class="header-nav-container">
         <a class="link" href="./index.html"
           ><img
+            class="logo-img"
             src="./images/logo.svg"
             alt="company logo"
             width="66"
             height="52"
         /></a>
-        <ul class="list">
-          <li><a class="link" href="">Home</a></li>
-          <li><a class="link" href="">About</a></li>
-          <li><a class="link" href="">Service</a></li>
-          <li><a class="link" href="">Menu</a></li>
-          <li><a class="link" href="">Contact</a></li>
+        <ul class="list header-nav-list">
+          <li><a class="green-link nav-menu" href="">Home</a></li>
+          <li><a class="link nav-menu" href="">About</a></li>
+          <li><a class="link nav-menu" href="">Service</a></li>
+          <li><a class="link nav-menu" href="">Menu</a></li>
+          <li><a class="link nav-menu" href="">Contact</a></li>
         </ul>
-        <button type="button">Order Now</button>
+        <button class="btn-green" type="button">Order Now</button>
       </nav>
     </header>
     <main>
-      <!-- Hero Section -->
+      <!--!        Hero Section -->
       <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
+        <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
         <p>
           With just a few clicks, you can have your favorite meals delivered
           straight to your doorstep, no matter where you are. Order now and
           enjoy a hassle-free and delicious meal from the comfort of your own
           home.
         </p>
-        <button type="button">Order Now</button>
+        <button class="btn-green" type="button">Order Now</button>
         <a class="link" href=""
           ><img
             src="./images/hero-pic.png"
@@ -67,7 +69,7 @@
         /></a>
       </section>
 
-      <!-- Offering Section -->
+      <!--!         Offering Section -->
       <section>
         <a class="link" href=""
           ><img
@@ -76,7 +78,7 @@
             width="396"
             height="502"
         /></a>
-        <h2>What`s Special About Our Offerings</h2>
+        <h2 class="section-title">What`s Special About Our Offerings</h2>
         <p>
           With our platform, you can browse through a diverse selection of
           cuisines and local restaurants, and choose from a variety of dishes
@@ -90,8 +92,8 @@
               width="48"
               height="48"
             />
-            <h3>Fastest Delivery</h3>
-            <p>
+            <h3 class="sub-title">Fastest Delivery</h3>
+            <p class="offering-text">
               Our advanced logistics system and dedicated delivery partners
               ensure that your meals are delivered to you within 30-minutes.
             </p>
@@ -103,20 +105,20 @@
               width="48"
               height="48"
             />
-            <h3>Easy To Order</h3>
-            <p>
+            <h3 class="sub-title">Easy To Order</h3>
+            <p class="offering-text">
               You can browse through a wide variety of cuisines and restaurants,
               select your favorite meals, and place your order in just a few
               clicks.
             </p>
           </li>
         </ul>
-        <button type="button">Order Now</button>
+        <button class="btn-white" type="button">Order Now</button>
       </section>
 
-      <!-- Section Favorites -->
+      <!--!         Section Favorites -->
       <section>
-        <h2>Some of Our Favorites</h2>
+        <h2 class="section-title">Some of Our Favorites</h2>
         <p>Looking for something delicious?</p>
         <ul class="list">
           <li>
@@ -176,16 +178,16 @@
         </ul>
       </section>
 
-      <!-- Customers Section -->
+      <!--!         Customers Section -->
       <section>
-        <h2>What our Customers Say</h2>
+        <h2 class="section-title">What our Customers Say</h2>
         <p>
           Don't just take our word for it - see what our satisfied customers
           have to say
         </p>
         <ul class="list">
           <li>
-            <p>
+            <p class="customer-comment">
               "The Best app I have used to order food in a while, so many
               options to choose from too, I would recommend to a friend, No
               questions asked"
@@ -196,11 +198,11 @@
               width="48"
               height="48"
             />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
+            <h3 class="customer-name">Sumith Shah</h3>
+            <p class="customer-psn">Some Dude</p>
           </li>
           <li>
-            <p>
+            <p class="customer-comment">
               "The ease with which I can just go in and order what i want was
               amazing, It has been a very pleasant experience ordering from this
               app"
@@ -211,59 +213,76 @@
               width="48"
               height="48"
             />
-            <h3>Sumith Shah</h3>
-            <p>Some Dude</p>
+            <h3 class="customer-name">Sumith Shah</h3>
+            <p class="customer-psn">Some Dude</p>
           </li>
         </ul>
       </section>
 
-      <!-- Subscribe Section -->
+      <!--!         Subscribe Section -->
       <section>
-        <h2>Subscribe To Get Special Offers</h2>
+        <h2 class="section-title">Subscribe To Get Special Offers</h2>
         <p>
           Order now and receive 10% off your first meal with Enjoy Your Favorite
           Food From Anywhere.
         </p>
         <form>
-          <input placeholder="Enter your email" type="e-mail" /><button
-            type="submit"
-          >
-            Subscribe
-          </button>
+          <input
+            class="input-field"
+            placeholder="Enter your email"
+            type="email"
+          /><button class="btn-green" type="submit">Subscribe</button>
         </form>
         <a class="link" href=""
           ><img src="./images/banan.png" alt="banana" width="608" height="266"
         /></a>
       </section>
     </main>
-    <footer>
-      <a class="link" href="./index.html"
-        ><img src="./images/logo.svg" alt="company logo" width="66" height="52"
-      /></a>
-      <nav>
-        <ul class="list">
-          <li><a class="link" href="">Home</a></li>
-          <li><a class="link" href="">About</a></li>
-          <li><a class="link" href="">Service</a></li>
-          <li><a class="link" href="">Menu</a></li>
-          <li><a class="link" href="">Contact</a></li>
+
+    <!--!            Footer -->
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="link" href="./index.html"
+          ><img
+            src="./images/logo.svg"
+            alt="company logo"
+            width="66"
+            height="52"
+        /></a>
+        <nav class="footer-nav-container">
+          <ul class="list footer-links">
+            <li><a class="link nav-menu" href="">Home</a></li>
+            <li><a class="link nav-menu" href="">About</a></li>
+            <li><a class="link nav-menu" href="">Service</a></li>
+            <li><a class="link nav-menu" href="">Menu</a></li>
+            <li><a class="link nav-menu" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="subscribe-box">
+          <p class="subscribe-box-text">Subscribe</p>
+          <form>
+            <input
+              class="input-field-footer"
+              placeholder="Enter your email"
+              type="e-mail"
+            />
+            <button class="btn-white" type="submit">Subscribe</button>
+          </form>
+          <p class="subscribe-box-sub-text">
+            By subscribing you agree to with our
+            <a class="footer-link-green" href="">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <ul class="list footer-links">
+          <li><a class="footer-link-green" href="">Privacy Policy</a></li>
+          <li><a class="footer-link-green" href="">Terms of Service</a></li>
+          <li><a class="footer-link-green" href="">Cookies Settings</a></li>
         </ul>
-      </nav>
-      <p>Subscribe</p>
-      <form>
-        <input placeholder="Enter your email" type="e-mail" /><button
-          type="submit"
-        >
-          Subscribe
-        </button>
-      </form>
-      <p>By subscribing you agree to with our <a href="">Privacy Policy</a></p>
-      <ul class="list">
-        <li><a class="link" href="">Privacy Policy</a></li>
-        <li><a class="link" href="">Terms of Service</a></li>
-        <li><a class="link" href="">Cookies Settings</a></li>
-      </ul>
-      <p>2022 FoodSta. All right reserved.</p>
+        <p class="copyright">2022 FoodSta. All right reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
