@@ -36,6 +36,11 @@ p {
   margin: 0;
 }
 
+.container {
+  width: 1280px;
+  padding: 0 16px;
+}
+
 /* ! ============= Header =========== */
 
 /* todo:------------to work out Flexes */
@@ -46,12 +51,16 @@ p {
 }
 
 .logo-img {
-  margin: 10px 735px 10px 16px;
 }
 
-.header-nav-container {
+.header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.subheader-container {
+  display: flex;
   align-items: center;
 }
 
