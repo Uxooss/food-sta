@@ -16,6 +16,17 @@
     #fff5f9 23.87%,
     #fe88b3 100%
   );
+  --btn-transition: 350ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 body {
@@ -63,8 +74,6 @@ p {
 
 /* ! ============= Header =========== */
 
-/* todo:------------to work out Flexes */
-
 .header {
   background: var(--color-white);
   box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
@@ -105,15 +114,13 @@ p {
 .nav-menu {
   margin-right: 28px;
   padding: 20px 0;
+  transition: font-size var(--btn-transition), color var(--btn-transition);
 }
 
-.green-link {
+.nav-menu:hover {
+  text-decoration: underline;
   color: var(--color-button-green);
-  font-family: 'Roboto', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 16px;
 }
 
 .btn-order-green {
@@ -130,6 +137,11 @@ p {
   text-align: center;
   color: var(--color-black);
   cursor: pointer;
+  transition: background-color var(--btn-transition);
+}
+
+.btn-order-green:hover {
+  background-color: var(--color-yellow-main);
 }
 
 /* ! ========== Hero Section ==========*/
@@ -169,7 +181,7 @@ p {
 }
 .hero-main-pic {
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   right: 56px;
   transform: scale(1);
   transition: transform 300ms linear;
@@ -180,35 +192,160 @@ p {
 }
 
 /* ! =========== Offering Section ======*/
+.offering {
+  height: 824px;
+  padding-top: 260px;
+  margin-top: -230px;
+  background-image: url(../images/offering-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.offering-container {
+  position: relative;
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.offering-pic-box-outer {
+  position: absolute;
+  width: 550px;
+  height: 550px;
+  left: 16px;
+  top: -30px;
+  background-color: transparent;
+  border: 5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.offering-pic-box {
+  position: relative;
+  height: 502px;
+  width: 502px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--color-white);
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.offering-main-pic {
+  display: block;
+  position: absolute;
+  top: -80px;
+  left: 51px;
+  transform: scale(1);
+  transition: transform 300ms linear;
+  z-index: 200;
+}
+
+.offering-pic-box::after {
+  content: '';
+  position: absolute;
+  bottom: 48px;
+  left: 120px;
+  width: 252px;
+  height: 87px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #2f583f 0%,
+    rgba(105, 105, 105, 0) 100%
+  );
+  filter: blur(13px);
+  z-index: 150;
+}
+
+.offering-main-pic:hover {
+  transform: scale(1.05);
+}
+
+.offering-text-box {
+  max-width: 573px;
+}
+
 .section-title {
+  max-width: 526px;
   font-weight: 700;
   font-size: 42px;
-  line-height: 49px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+}
+
+.section-text {
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+.offering-list {
+  display: flex;
+  gap: 67px;
+  margin-right: 35px;
+}
+
+.offering-list-item {
+  width: calc((100% - 67px) / 2);
+}
+
+.offering-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transform: scale(1);
+  transition: scale 500ms linear;
+}
+
+.delivery-icon {
+  fill: var(--color-dark-green);
+}
+
+.offering-icon-box:hover {
+  transform: scale(1.1);
+  animation: spin 250ms linear;
+  animation-iteration-count: 2;
 }
 
 .sub-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 1.4;
+  margin-bottom: 16px;
 }
 
 .offering-text {
   font-size: 14px;
+  margin-bottom: 32px;
 }
 
-.btn-white {
+.btn-order-white {
   width: 98px;
   height: 32px;
-  background: #ffffff;
+  background: var(--color-white);
   border-radius: 30px;
-  border: 2px solid #7eb101;
+  border: 2px solid var(--color-dark-green);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
   line-height: 1.5;
   text-align: center;
-  color: #2c2c2c;
+  color: var(--color-black);
+  cursor: pointer;
+  transition: background-color var(--btn-transition),
+    border var(--btn-transition);
+}
+
+.btn-order-white:hover {
+  background-color: var(--color-button-green);
+  border: none;
 }
 
 /* ! ======== Customers Section ======== */

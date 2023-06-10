@@ -39,7 +39,7 @@
         <div class="subheader-container">
           <nav>
             <ul class="list header-nav-list">
-              <li><a class="green-link nav-menu" href="">Home</a></li>
+              <li><a class="link nav-menu" href="">Home</a></li>
               <li><a class="link nav-menu" href="">About</a></li>
               <li><a class="link nav-menu" href="">Service</a></li>
               <li><a class="link nav-menu" href="">Menu</a></li>
@@ -83,50 +83,58 @@
       </section>
 
       <!--! ======== Offering Section ======= -->
-      <section>
-        <a class="link" href=""
-          ><img
-            src="./images/aple.png"
-            alt="green apple"
-            width="396"
-            height="502"
-        /></a>
-        <h2 class="section-title">What`s Special About Our Offerings</h2>
-        <p>
-          With our platform, you can browse through a diverse selection of
-          cuisines and local restaurants, and choose from a variety of dishes
-          that cater to your specific taste buds.
-        </p>
-        <ul class="list">
-          <li>
-            <img
-              src="./images/deliv-ico.svg"
-              alt="delivery icon"
-              width="48"
-              height="48"
-            />
-            <h3 class="sub-title">Fastest Delivery</h3>
-            <p class="offering-text">
-              Our advanced logistics system and dedicated delivery partners
-              ensure that your meals are delivered to you within 30-minutes.
+      <section class="offering">
+        <div class="container offering-container">
+          <div class="offering-pic-box-outer">
+            <div class="offering-pic-box">
+              <img
+                class="offering-main-pic"
+                src="./images/aple.png"
+                alt="green apple"
+                width="396"
+                height="502"
+              />
+            </div>
+          </div>
+
+          <div class="offering-text-box">
+            <h2 class="section-title">What`s Special About Our Offerings</h2>
+            <p class="section-text">
+              With our platform, you can browse through a diverse selection of
+              cuisines and local restaurants, and choose from a variety of
+              dishes that cater to your specific taste buds.
             </p>
-          </li>
-          <li>
-            <img
-              src="./images/order-ico.svg"
-              alt="order icon"
-              width="48"
-              height="48"
-            />
-            <h3 class="sub-title">Easy To Order</h3>
-            <p class="offering-text">
-              You can browse through a wide variety of cuisines and restaurants,
-              select your favorite meals, and place your order in just a few
-              clicks.
-            </p>
-          </li>
-        </ul>
-        <button class="btn-white" type="button">Order Now</button>
+            <ul class="list offering-list">
+              <li class="offering-list-item">
+                <div class="offering-icon-box">
+                  <svg class="delivery-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-delivery"></use>
+                  </svg>
+                </div>
+
+                <h3 class="sub-title">Fastest Delivery</h3>
+                <p class="offering-text">
+                  Our advanced logistics system and dedicated delivery partners
+                  ensure that your meals are delivered to you within 30-minutes.
+                </p>
+              </li>
+              <li class="offering-list-item">
+                <div class="offering-icon-box">
+                  <svg class="delivery-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-order"></use>
+                  </svg>
+                </div>
+                <h3 class="sub-title">Easy To Order</h3>
+                <p class="offering-text">
+                  You can browse through a wide variety of cuisines and
+                  restaurants, select your favorite meals, and place your order
+                  in just a few clicks.
+                </p>
+              </li>
+            </ul>
+            <button class="btn-order-white" type="button">Order Now</button>
+          </div>
+        </div>
       </section>
 
       <!--! ======== Section Favorites ====== -->
