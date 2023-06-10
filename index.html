@@ -31,14 +31,11 @@
     <!--! ========== Header ========== -->
     <header class="header">
       <div class="container header-container">
-        <a class="link" href="./index.html"
-          ><img
-            class="logo-img"
-            src="./images/logo.svg"
-            alt="company logo"
-            width="66"
-            height="52"
-        /></a>
+        <a class="link logo-link" href="./index.html">
+          <svg class="logo-icon" width="66" height="52">
+            <use href="./images/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
         <div class="subheader-container">
           <nav>
             <ul class="list header-nav-list">
@@ -49,28 +46,40 @@
               <li><a class="link nav-menu" href="">Contact</a></li>
             </ul>
           </nav>
-          <button class="btn-green" type="button">Order Now</button>
+          <button class="btn-order-green" type="button">Order Now</button>
         </div>
       </div>
     </header>
     <main>
       <!--! ======= Hero Section ========= -->
-      <section>
-        <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button class="btn-green" type="button">Order Now</button>
-        <a class="link" href=""
-          ><img
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-text-box">
+            <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="hero-text">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="btn-order-green" type="button">Order Now</button>
+          </div>
+
+          <img
+            class="hero-sub-pic"
+            src="./images/ellipse-hero.png"
+            alt="yellow circle"
+            width="580"
+            height="580"
+          />
+          <img
+            class="hero-main-pic"
             src="./images/hero-pic.png"
             alt="meatballs, bread, sauce and salad dish"
             width="528"
             height="528"
-        /></a>
+          />
+        </div>
       </section>
 
       <!--! ======== Offering Section ======= -->
