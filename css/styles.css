@@ -348,6 +348,61 @@ p {
   border: none;
 }
 
+/*! ========= Section Favorites ======= */
+
+.favorites {
+  padding: 100px 0;
+}
+
+.favorites-title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+
+.favorites-text {
+  line-height: 1.19;
+  text-align: center;
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+
+.favorites-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorites-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100% - 64px) / 3);
+  min-height: 397px;
+  background: var(--color-white);
+  border: 16px solid var(--color-yellow-main);
+  border-radius: 197.5px;
+  transition: border-color var(--btn-transition);
+}
+
+.favorites-list-item:hover {
+  border-color: var(--color-button-green);
+}
+
+.favorites-pic {
+  transform: scale(1);
+  transition: transform 500ms ease-in-out;
+}
+
+.favorites-list-item:hover .favorites-pic {
+  transform: scale(1.05);
+}
+
 /* ! ======== Customers Section ======== */
 .customer-comment {
   font-weight: 700;
