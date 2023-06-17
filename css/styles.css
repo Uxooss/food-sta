@@ -152,8 +152,8 @@ p {
 
 /* ! ========== Hero Section ==========*/
 .hero {
-  padding-top: 231px;
-  padding-bottom: 236px;
+  padding-top: 86px;
+  padding-bottom: 80px;
 }
 
 .hero-container {
@@ -181,7 +181,7 @@ p {
   margin-bottom: 40px;
 }
 
-.hero-sub-pic {
+/* .hero-sub-pic {
   position: absolute;
   right: 30px;
 }
@@ -195,6 +195,78 @@ p {
 
 .hero-main-pic:hover {
   transform: scale(1.05);
+} */
+
+/** ======= Hero Slider ========= */
+
+.slider-wrap {
+  position: relative;
+  width: 580px;
+  height: 580px;
+  margin-left: 129px;
+}
+
+.hero-slider {
+  position: relative;
+  width: 580px;
+  height: 580px;
+  border: 26px solid #ffe550;
+  background-color: #fefefe;
+  border-radius: 50%;
+}
+
+.hero-pic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.slick-prev,
+.slick-next {
+  width: 48px;
+  height: 40px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.slick-next {
+  width: 48px;
+  height: 40px;
+  background: #fefefe;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+}
+
+.slick-next {
+  right: -40px;
+}
+
+.slick-prev {
+  left: -40px;
+}
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  color: transparent;
+  outline: none;
+  background: #fefefe;
+}
+
+.slider-arrow-right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-arrow-left {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* ! =========== Offering Section ======*/

@@ -13,6 +13,21 @@
       rel="stylesheet"
     />
 
+    <!--* ========= SLIDER ================= -->
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
     <!-- * ========= modern-normalize ======== -->
     <link
       rel="stylesheet"
@@ -77,20 +92,31 @@
             </button>
           </div>
 
-          <img
-            class="hero-sub-pic"
-            src="./images/ellipse-hero.png"
-            alt="yellow circle"
-            width="580"
-            height="580"
-          />
-          <img
-            class="hero-main-pic"
-            src="./images/hero-pic-1.png"
-            alt="meatballs, bread, sauce and salad dish"
-            width="528"
-            height="528"
-          />
+          <!--* ======= Hero Slider ========= -->
+
+          <div class="slider-wrap">
+            <div class="fade hero-slider">
+              <div class="hero-pic">
+                <img src="./images/hero-pic-1.png" alt="" />
+              </div>
+
+              <div class="hero-pic">
+                <img src="./images/hero-pic-2.png" alt="" />
+              </div>
+
+              <div class="hero-pic">
+                <img src="./images/hero-pic-3.png" alt="" />
+              </div>
+            </div>
+
+            <svg class="slider-arrow-right" width="16" height="29">
+              <use href="./images/icons.svg#icon-arrow-right"></use>
+            </svg>
+
+            <svg class="slider-arrow-left" width="16" height="29">
+              <use href="./images/icons.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
         </div>
       </section>
 
@@ -397,7 +423,20 @@
         <button class="button" type="button" data-third-modal-close>X</button>
       </div>
     </div>
-
+    <!--! ======= SCRIPTS ====== -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
