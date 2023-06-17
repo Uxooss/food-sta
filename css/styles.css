@@ -181,22 +181,6 @@ p {
   margin-bottom: 40px;
 }
 
-/* .hero-sub-pic {
-  position: absolute;
-  right: 30px;
-}
-.hero-main-pic {
-  position: absolute;
-  z-index: 100;
-  right: 56px;
-  transform: scale(1);
-  transition: transform 300ms linear;
-}
-
-.hero-main-pic:hover {
-  transform: scale(1.05);
-} */
-
 /** ======= Hero Slider ========= */
 
 .slider-wrap {
@@ -210,8 +194,8 @@ p {
   position: relative;
   width: 580px;
   height: 580px;
-  border: 26px solid #ffe550;
-  background-color: #fefefe;
+  border: 26px solid var(--color-yellow-main);
+  background-color: var(--color-white);
   border-radius: 50%;
 }
 
@@ -225,7 +209,7 @@ p {
 .slick-next {
   width: 48px;
   height: 40px;
-  background: #fefefe;
+  background: var(--color-white);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
   border-radius: 8px;
 }
@@ -244,7 +228,7 @@ p {
 .slick-next:focus {
   color: transparent;
   outline: none;
-  background: #fefefe;
+  background: var(--color-white);
 }
 
 .slider-arrow-right {
