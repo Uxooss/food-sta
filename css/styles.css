@@ -588,6 +588,16 @@ p {
   background: #79ff50;
 }
 
+.second-modal p {
+  display: flex;
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+  color: red;
+  text-transform: uppercase;
+  text-shadow: 4px 3px 5px #000000;
+}
+
 .third-modal {
   background: #ff6750;
 }

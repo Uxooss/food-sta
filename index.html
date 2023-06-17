@@ -85,7 +85,7 @@
             </p>
             <button
               class="button btn-order-green"
-              data-second-modal-open
+              data-first-modal-open
               type="button"
             >
               Order Now
@@ -172,7 +172,7 @@
             </ul>
             <button
               class="button btn-order-white"
-              data-third-modal-open
+              data-first-modal-open
               type="button"
             >
               Order Now
@@ -304,7 +304,9 @@
             class="input-field"
             placeholder="Enter your email"
             type="email"
-          /><button class="btn-green" type="submit">Subscribe</button>
+          /><button class="btn-green" data-second-modal-open type="button">
+            Subscribe
+          </button>
         </form>
         <a class="link" href=""
           ><img src="./images/banan.png" alt="banana" width="608" height="266"
@@ -339,7 +341,9 @@
               placeholder="Enter your email"
               type="e-mail"
             />
-            <button class="btn-white" type="submit">Subscribe</button>
+            <button class="btn-white" data-second-modal-open type="button">
+              Subscribe
+            </button>
           </form>
           <p class="subscribe-box-sub-text">
             By subscribing you agree to with our
@@ -358,6 +362,7 @@
       </div>
     </footer>
     <!--! ========== MODAL ================= -->
+    <!--? ========== "Order Now" Modal ===== -->
     <div class="backdrop is-hidden" data-first-modal>
       <div class="modal first-modal">
         <button class="modal-close-btn" type="button" data-first-modal-close>
@@ -412,12 +417,18 @@
       </div>
     </div>
 
+    <!--? ========== "Subscribe" Modal ===== -->
     <div class="backdrop is-hidden" data-second-modal>
       <div class="modal second-modal">
-        <button class="button" type="button" data-second-modal-close>X</button>
+        <button class="modal-close-btn" type="button" data-second-modal-close>
+          <svg class="modal-close-icon" width="11" height="11">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p>under construction</p>
       </div>
     </div>
-
+    <!--? ========== Spare Modal ===== -->
     <div class="backdrop is-hidden" data-third-modal>
       <div class="modal third-modal">
         <button class="button" type="button" data-third-modal-close>X</button>
