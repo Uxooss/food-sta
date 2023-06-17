@@ -46,7 +46,9 @@
               <li><a class="link nav-menu" href="">Contact</a></li>
             </ul>
           </nav>
-          <button class="btn-order-green" type="button">Order Now</button>
+          <button class="btn-order-green" data-first-modal-open type="button">
+            Order Now
+          </button>
         </div>
       </div>
     </header>
@@ -62,7 +64,13 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button class="btn-order-green" type="button">Order Now</button>
+            <button
+              class="btn-order-green"
+              data-second-modal-open
+              type="button"
+            >
+              Order Now
+            </button>
           </div>
 
           <img
@@ -132,7 +140,9 @@
                 </p>
               </li>
             </ul>
-            <button class="btn-order-white" type="button">Order Now</button>
+            <button class="btn-order-white" data-third-modal-open type="button">
+              Order Now
+            </button>
           </div>
         </div>
       </section>
@@ -313,5 +323,25 @@
         <p class="copyright">2022 FoodSta. All right reserved.</p>
       </div>
     </footer>
+    <!--! MODAL -->
+    <div class="backdrop is-hidden" data-first-modal>
+      <div class="modal">
+        <button type="button" data-first-modal-close>X</button>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-second-modal>
+      <div class="modal second-modal">
+        <button type="button" data-second-modal-close>X</button>
+      </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-third-modal>
+      <div class="modal third-modal">
+        <button type="button" data-third-modal-close>X</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
