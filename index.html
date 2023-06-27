@@ -54,7 +54,7 @@
         <div class="subheader-container">
           <nav>
             <ul class="list header-nav-list">
-              <li><a class="link nav-menu" href="">Home</a></li>
+              <li><a class="link nav-menu" href="./">Home</a></li>
               <li><a class="link nav-menu" href="">About</a></li>
               <li><a class="link nav-menu" href="">Service</a></li>
               <li><a class="link nav-menu" href="">Menu</a></li>
@@ -68,6 +68,49 @@
           >
             Order Now
           </button>
+        </div>
+      </div>
+
+      <!--*========= MOBILE MENU BLOCK =========-->
+
+      <div class="mobile-menu">
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="mobile-menu-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-btn-close menu-toggle js-close-menu">
+          <svg class="close-icon" width="12" height="12">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="menu-content">
+          <ul class="mobile-menu-list list">
+            <li class="menu-list-item">
+              <a class="menu-list-link link" href="./">Home</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link link" href="">About</a>
+            </li>
+            <li class="menu-list-item">
+              <a class="menu-list-link link" href="">Service</a>
+            </li>
+
+            <li class="menu-list-item">
+              <a class="menu-list-link link" href="">Menu</a>
+            </li>
+
+            <li class="menu-list-item">
+              <a class="menu-list-link link" href="">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -91,10 +134,11 @@
               Order Now
             </button>
           </div>
+        </div>
+      </section>
+      <!--* ======= Hero Slider ========= -->
 
-          <!--* ======= Hero Slider ========= -->
-
-          <div class="slider-wrap">
+      <!-- <div class="slider-wrap">
             <div class="fade hero-slider">
               <div class="hero-pic">
                 <img src="./images/hero-pic-1.png" alt="" />
@@ -118,24 +162,22 @@
             </svg>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!--! ======== Offering Section ======= -->
       <section class="offering">
         <div class="container offering-container">
-          <div class="offering-pic-box-outer">
-            <div class="offering-pic-box">
-              <img
-                class="offering-main-pic"
-                src="./images/aple.png"
-                alt="green apple"
-                width="396"
-                height="502"
-              />
-            </div>
+          <div class="offering-pic-box">
+            <img
+              class="offering-main-pic"
+              src="./images/aple.png"
+              alt="green apple"
+              width="396"
+              height="502"
+            />
           </div>
 
-          <div class="offering-text-box">
+          <!-- <div class="offering-text-box">
             <h2 class="section-title">What`s Special About Our Offerings</h2>
             <p class="section-text">
               With our platform, you can browse through a diverse selection of
@@ -177,12 +219,12 @@
             >
               Order Now
             </button>
-          </div>
+          </div> -->
         </div>
       </section>
 
       <!--! ======== Section Favorites ====== -->
-      <section class="favorites">
+      <!-- <section class="favorites">
         <div class="container">
           <h2 class="favorites-title">Some of Our Favorites</h2>
           <p class="favorites-text">Looking for something delicious?</p>
@@ -249,10 +291,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--! ======== Customers Section ====== -->
-      <section>
+      <!-- <section>
         <h2 class="section-title">What our Customers Say</h2>
         <p>
           Don't just take our word for it - see what our satisfied customers
@@ -290,10 +332,10 @@
             <p class="customer-psn">Some Dude</p>
           </li>
         </ul>
-      </section>
+      </section> -->
 
       <!--! ======== Subscribe Section ====== -->
-      <section>
+      <!-- <section>
         <h2 class="section-title">Subscribe To Get Special Offers</h2>
         <p>
           Order now and receive 10% off your first meal with Enjoy Your Favorite
@@ -311,11 +353,11 @@
         <a class="link" href=""
           ><img src="./images/banan.png" alt="banana" width="608" height="266"
         /></a>
-      </section>
+      </section> -->
     </main>
 
     <!--! ========== Footer ================ -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-top">
         <a class="link" href="./index.html"
           ><img
@@ -360,9 +402,10 @@
         </ul>
         <p class="copyright">2022 FoodSta. All right reserved.</p>
       </div>
-    </footer>
+    </footer> -->
     <!--! ========== MODAL ================= -->
     <!--? ========== "Order Now" Modal ===== -->
+
     <div class="backdrop is-hidden" data-first-modal>
       <div class="modal first-modal">
         <button class="modal-close-btn" type="button" data-first-modal-close>
@@ -434,7 +477,7 @@
         <button class="button" type="button" data-third-modal-close>X</button>
       </div>
     </div>
-    <!--! ======= SCRIPTS ====== -->
+    <!--!==================== SCRIPTS ==================-->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -449,5 +492,14 @@
     ></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

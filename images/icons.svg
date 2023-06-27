@@ -20,5 +20,9 @@
     <symbol id="icon-arrow-right" viewBox="0 0 18 32">
       <path d="M17.653 15.035 2.792.875a1.334 1.334 0 0 0-1.84 0L.936.891a1.222 1.222 0 0 0-.282 1.373c.065.153.162.291.282.405l13.995 13.333L.936 29.33a1.212 1.212 0 0 0-.381.889 1.236 1.236 0 0 0 .381.889l.016.016a1.334 1.334 0 0 0 1.84 0l14.861-14.16a1.331 1.331 0 0 0 0-1.93z"/>
     </symbol>
+
+    <symbol id="icon-menu-hamburger" viewBox="0 0 47 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-width="4.364" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"/>
+    </symbol>
   </defs>
 </svg>
