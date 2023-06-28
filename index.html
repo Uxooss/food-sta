@@ -304,115 +304,167 @@
       </section>
 
       <!--! ======== Customers Section ====== -->
-      <!-- <section>
-        <h2 class="section-title">What our Customers Say</h2>
-        <p>
-          Don't just take our word for it - see what our satisfied customers
-          have to say
-        </p>
-        <ul class="list">
-          <li>
-            <p class="customer-comment">
-              "The Best app I have used to order food in a while, so many
-              options to choose from too, I would recommend to a friend, No
-              questions asked"
-            </p>
-            <img
-              src="./images/customer-1.png"
-              alt="customer-1"
-              width="48"
-              height="48"
-            />
-            <h3 class="customer-name">Sumith Shah</h3>
-            <p class="customer-psn">Some Dude</p>
-          </li>
-          <li>
-            <p class="customer-comment">
-              "The ease with which I can just go in and order what i want was
-              amazing, It has been a very pleasant experience ordering from this
-              app"
-            </p>
-            <img
-              src="./images/customer-2.png"
-              alt="customer-2"
-              width="48"
-              height="48"
-            />
-            <h3 class="customer-name">Sumith Shah</h3>
-            <p class="customer-psn">Some Dude</p>
-          </li>
-        </ul>
-      </section> -->
+      <section class="customers">
+        <div class="container">
+          <h2 class="section-title customers-section-title">
+            What our Customers Say
+          </h2>
+          <p class="section-text customers-section-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          </p>
+          <ul class="list customers-list">
+            <li class="customers-list-item">
+              <div class="stars">
+                <svg width="101" height="16">
+                  <use href="./images/icons.svg#icon-Stars"></use>
+                </svg>
+              </div>
+              <p class="customer-comment">
+                "The Best app I have used to order food in a while, so many
+                options to choose from too, I would recommend to a friend, No
+                questions asked"
+              </p>
+              <div class="customer-info-box">
+                <img
+                  src="./images/customer-1.png"
+                  alt="customer-1"
+                  width="48"
+                  height="48"
+                />
+                <div class="customer-info-text">
+                  <h3 class="customer-name">Sumith Shah</h3>
+                  <p class="customer-psn">Some Dude</p>
+                </div>
+              </div>
+            </li>
+            <li class="customers-list-item">
+              <div class="stars">
+                <svg width="101" height="16">
+                  <use href="./images/icons.svg#icon-Stars"></use>
+                </svg>
+              </div>
+              <p class="customer-comment">
+                "The ease with which I can just go in and order what i want was
+                amazing, It has been a very pleasant experience ordering from
+                this app"
+              </p>
+              <div class="customer-info-box">
+                <img
+                  src="./images/customer-2.png"
+                  alt="customer-2"
+                  width="48"
+                  height="48"
+                />
+                <div class="customer-info-text">
+                  <h3 class="customer-name">Sumith Shah</h3>
+                  <p class="customer-psn">Some Dude</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!--! ======== Subscribe Section ====== -->
-      <!-- <section>
-        <h2 class="section-title">Subscribe To Get Special Offers</h2>
-        <p>
-          Order now and receive 10% off your first meal with Enjoy Your Favorite
-          Food From Anywhere.
-        </p>
-        <form>
-          <input
-            class="input-field"
-            placeholder="Enter your email"
-            type="email"
-          /><button class="btn-green" data-second-modal-open type="button">
-            Subscribe
-          </button>
-        </form>
-        <a class="link" href=""
-          ><img src="./images/banan.png" alt="banana" width="608" height="266"
-        /></a>
-      </section> -->
-    </main>
+      <section class="subscribe">
+        <div class="container subscribe-container">
+          <div class="subscribe-picture-box">
+            <img
+              class="subscribe-title-picture"
+              src="./images/banan.png"
+              alt="banana"
+              width="608"
+              height="266"
+            />
+          </div>
 
-    <!--! ========== Footer ================ -->
-    <!-- <footer class="footer">
-      <div class="footer-top">
-        <a class="link" href="./index.html"
-          ><img
-            src="./images/logo.svg"
-            alt="company logo"
-            width="66"
-            height="52"
-        /></a>
-        <nav class="footer-nav-container">
-          <ul class="list footer-links">
-            <li><a class="link nav-menu" href="">Home</a></li>
-            <li><a class="link nav-menu" href="">About</a></li>
-            <li><a class="link nav-menu" href="">Service</a></li>
-            <li><a class="link nav-menu" href="">Menu</a></li>
-            <li><a class="link nav-menu" href="">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="subscribe-box">
-          <p class="subscribe-box-text">Subscribe</p>
-          <form>
+          <h2 class="section-title subscribe-title">
+            Subscribe To Get Special Offers
+          </h2>
+          <p class="subscribe-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            varius enim in eros elementum tristique.
+          </p>
+
+          <form class="subscribe-form">
+            <label class="subscribe-label" for="subscribe-email"></label>
             <input
-              class="input-field-footer"
+              id="subscribe-email"
+              class="subscribe-input"
               placeholder="Enter your email"
               type="email"
-            />
-            <button class="btn-white" data-second-modal-open type="button">
+            /><button
+              class="button btn-green"
+              data-second-modal-open
+              type="button"
+            >
               Subscribe
             </button>
           </form>
-          <p class="subscribe-box-sub-text">
+        </div>
+      </section>
+    </main>
+
+    <!--! ========== Footer ================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a class="link" href="./index.html"
+            ><svg class="logo-icon" width="66" height="52">
+              <use href="./images/icons.svg#icon-logo"></use></svg
+          ></a>
+          <nav class="footer-nav-container">
+            <ul class="list footer-links">
+              <li class="footer-links-item">
+                <a class="link nav-menu" href="">Home</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="link nav-menu" href="">About</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="link nav-menu" href="">Service</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="link nav-menu" href="">Menu</a>
+              </li>
+              <li class="footer-links-item">
+                <a class="link nav-menu" href="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="subscribe-box">
+          <p class="subscribe-box-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <input
+              class="subscribe-input"
+              placeholder="Enter your email"
+              type="email"
+            />
+            <button
+              class="button subscribe-btn-white"
+              data-second-modal-open
+              type="button"
+            >
+              Subscribe
+            </button>
+          </form>
+          <p class="subscribe-box-subtext">
             By subscribing you agree to with our
             <a class="footer-link-green" href="">Privacy Policy</a>
           </p>
         </div>
-      </div>
 
-      <div class="footer-bottom">
-        <ul class="list footer-links">
-          <li><a class="footer-link-green" href="">Privacy Policy</a></li>
-          <li><a class="footer-link-green" href="">Terms of Service</a></li>
-          <li><a class="footer-link-green" href="">Cookies Settings</a></li>
-        </ul>
-        <p class="copyright">2022 FoodSta. All right reserved.</p>
+        <div class="footer-bottom">
+          <ul class="list footer-bottom-links">
+            <li><a class="footer-link-green" href="">Privacy Policy</a></li>
+            <li><a class="footer-link-green" href="">Terms of Service</a></li>
+            <li><a class="footer-link-green" href="">Cookies Settings</a></li>
+          </ul>
+          <p class="copyright">2022 FoodSta. All right reserved.</p>
+        </div>
       </div>
-    </footer> -->
+    </footer>
     <!--! ========== MODAL ================= -->
     <!--? ========== "Order Now" Modal ===== -->
 
@@ -487,6 +539,7 @@
         <button class="button" type="button" data-third-modal-close>X</button>
       </div>
     </div>
+
     <!--!==================== SCRIPTS ==================-->
     <script
       type="text/javascript"
