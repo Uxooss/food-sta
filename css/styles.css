@@ -916,9 +916,6 @@ img {
 .footer-nav-container {
 }
 
-.footer-links {
-}
-
 .footer-links-item:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -942,6 +939,10 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   margin-bottom: 32px;
+}
+
+.footer-subscribe-form .subscribe-input {
+  margin-bottom: 20px;
 }
 
 .subscribe-btn-white {
@@ -972,6 +973,65 @@ img {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-top {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+  }
+
+  .foot-logo {
+    margin-right: 114px;
+  }
+
+  .footer-links {
+    display: flex;
+  }
+
+  .footer-links-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .footer-subscribe-form {
+    flex-direction: row;
+    margin-bottom: 12px;
+  }
+
+  .footer-subscribe-form .subscribe-input {
+    margin-right: 12px;
+    margin-bottom: 0;
+    max-width: 279px;
+  }
+
+  .subscribe-box-subtext {
+    font-size: 12px;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-bottom-links {
+    margin-bottom: 0;
+  }
+
+  .bottom-list-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .footer-link-green {
+    font-size: 12px;
+  }
+
+  .copyright {
+    font-size: 12px;
+  }
+}
 /*! ==== "Order Now" Modal ===== */
 
 .backdrop {
