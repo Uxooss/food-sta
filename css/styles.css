@@ -94,10 +94,10 @@ img {
   outline: transparent;
 }
 /*!====================================*/
-/** ==================== */
 /** ===================== */
-/** ==================== */
-/** ==================== */
+/** ===================== */
+/** ===================== */
+/** ===================== */
 /** ===================== */
 /** ===================== */
 /* ! ============= Header =========== */
@@ -114,7 +114,7 @@ img {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 10px 20px;
+  padding: 10px 0;
 }
 
 .logo-link {
@@ -201,6 +201,53 @@ img {
   background-color: var(--color-button-green);
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .header-container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .subheader-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-nav-list {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: block;
+    margin-right: 28px;
+    padding: 28px 0;
+    transition: color var(--btn-transition);
+  }
+
+  .nav-menu:last-child {
+    margin-right: 30px;
+  }
+
+  .nav-menu:hover {
+    text-decoration: underline;
+    color: var(--color-dark-green);
+  }
+
+  .active {
+    text-decoration: underline;
+    color: var(--color-button-green);
+  }
+}
+
 /* ! ========== Hero Section ==========*/
 .hero {
   padding-top: 60px;
@@ -239,6 +286,10 @@ img {
   max-width: 98px;
   background-color: var(--color-button-green);
   padding: 6px 18px;
+}
+
+.slider-wrap {
+  display: none;
 }
 
 /* ! =========== Offering ======*/
