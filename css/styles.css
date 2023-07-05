@@ -660,6 +660,31 @@ img {
   margin: auto;
 }
 
+@media (min-width: 768px) {
+  .favorites {
+    padding: 100px 0;
+  }
+
+  .favorites-title {
+    font-size: 42px;
+    line-height: normal;
+  }
+
+  .favorites-text {
+    font-size: 16px;
+  }
+
+  .favorites-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .favorites-list-item {
+    max-width: calc((100% - 32px) / 2);
+  }
+}
+
 /*! ======== Customers ======== */
 
 .customers {
