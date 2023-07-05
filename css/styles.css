@@ -796,8 +796,6 @@ img {
   padding: 52px 0 60px;
   position: relative;
 }
-.subscribe-container {
-}
 
 .subscribe-picture-box {
   position: absolute;
@@ -813,8 +811,7 @@ img {
   height: 100%;
   width: auto;
 }
-.section-title {
-}
+
 .subscribe-title {
   line-height: 1.2;
   margin-bottom: 20px;
@@ -831,6 +828,7 @@ img {
   flex-direction: column;
   align-items: flex-end;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .subscribe-input {
@@ -842,7 +840,6 @@ img {
   font-size: 12px;
   line-height: 1.5;
   padding: 12px;
-  margin-bottom: 20px;
   outline: none;
 }
 
@@ -859,6 +856,46 @@ img {
 .btn-green {
   background-color: var(--color-button-green);
   padding: 12px 22px;
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    padding: 80px 0 100px;
+  }
+
+  .subscribe-picture-box {
+    height: 136px;
+    justify-content: flex-end;
+    top: -70px;
+  }
+
+  .subscribe-title-picture {
+    margin-right: 32px;
+  }
+
+  .subscribe-title {
+    font-size: 42px;
+    letter-spacing: 0;
+  }
+
+  .subscribe-text {
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .subscribe-input {
+    max-width: 395px;
+    margin-right: 22px;
+  }
 }
 
 /*! ========== Footer ========== */
