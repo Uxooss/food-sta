@@ -408,6 +408,58 @@ img {
   }
 }
 
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: 160px;
+    padding-bottom: 164px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    max-width: 502px;
+    margin-bottom: 28px;
+  }
+
+  .hero-text {
+    max-width: 511px;
+  }
+
+  .slider-wrap {
+    right: 30px;
+    top: -146px;
+    width: 580px;
+    height: 580px;
+  }
+
+  .hero-slider {
+    position: relative;
+    width: 580px;
+    height: 580px;
+    border: 26px solid var(--color-yellow-main);
+    background-color: var(--color-white);
+    border-radius: 50%;
+  }
+  .slick-next {
+    right: -38px;
+  }
+
+  .slick-prev {
+    left: -38px;
+  }
+  .slick-prev,
+  .slick-next {
+    width: 48px;
+    height: 40px;
+  }
+
+  .slider-arrow-right {
+    width: 24px;
+  }
+
+  .slider-arrow-left {
+    width: 24px;
+  }
+}
 /* ! =========== Offering ======*/
 .offering {
   background-color: var(--color-yellow-main);
