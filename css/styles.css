@@ -225,17 +225,14 @@ img {
 
   .header-nav-list {
     display: flex;
+    gap: 30px;
+    margin-right: 30px;
   }
 
   .nav-menu {
     display: block;
-    margin-right: 28px;
     padding: 28px 0;
     transition: color var(--btn-transition);
-  }
-
-  .nav-menu:last-child {
-    margin-right: 30px;
   }
 
   .nav-menu:hover {
@@ -246,6 +243,17 @@ img {
   .active {
     text-decoration: underline;
     color: var(--color-button-green);
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding: 0 16px;
+  }
+
+  .header-nav-list {
+    gap: 28px;
   }
 }
 
