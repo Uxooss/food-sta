@@ -216,21 +216,26 @@ img {
   display: none;
   font-size: 24px;
   color: var(--color-dark-green);
-  border: 1px solid var(--color-text-3);
+  border: 1px solid var(--color-shadow-fruit);
   background-color: var(--color-yellow-main);
   border-radius: 50%;
-  padding: 10px 14px;
   z-index: 999;
+  width: 50px;
+  aspect-ratio: 1/1;
 }
 
 .go-top:hover {
-  color: var(--color-yellow-main);
-  border: 1px solid var(--color-black);
-  background-color: var(--color-dark-green);
+  color: var(--color-text-3);
+  border: none;
+  background-color: var(--color-button-green);
+  box-shadow: 1px 2px 4px #696969;
 }
 
 .go-top--show {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 350ms ease-in-out;
 }
 
 @media (min-width: 768px) {
