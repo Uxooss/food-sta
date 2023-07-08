@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-button-green: #bbf330;
   --color-dark-green: #7eb101;
@@ -1090,6 +1094,7 @@ img {
 
   .footer-links {
     display: flex;
+    gap: 14px;
   }
 
   .footer-links-item:not(:last-child) {

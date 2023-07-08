@@ -39,13 +39,14 @@
     />
 
     <!-- * styles -->
+
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Food Sta</title>
   </head>
   <body>
     <!--! ========== Header ========== -->
-    <header class="header">
+    <header class="header" id="home">
       <div class="container header-container">
         <a class="link logo-link" href="./index.html">
           <svg class="logo-icon" width="66" height="52">
@@ -56,10 +57,10 @@
           <nav>
             <ul class="list header-nav-list">
               <li><a class="link nav-menu active" href="./">Home</a></li>
-              <li><a class="link nav-menu" href="">About</a></li>
-              <li><a class="link nav-menu" href="">Service</a></li>
-              <li><a class="link nav-menu" href="">Menu</a></li>
-              <li><a class="link nav-menu" href="">Contact</a></li>
+              <li><a class="link nav-menu" href="#about">About</a></li>
+              <li><a class="link nav-menu" href="#service">Service</a></li>
+              <li><a class="link nav-menu" href="#menu">Menu</a></li>
+              <li><a class="link nav-menu" href="#contact">Contact</a></li>
             </ul>
           </nav>
           <button
@@ -94,21 +95,21 @@
           <div class="menu-content">
             <ul class="mobile-menu-list list">
               <li class="menu-list-item">
-                <a class="menu-list-link link" href="./">Home</a>
+                <a class="menu-list-link link" href="#home">Home</a>
               </li>
               <li class="menu-list-item">
-                <a class="menu-list-link link" href="">About</a>
+                <a class="menu-list-link link" href="#about">About</a>
               </li>
               <li class="menu-list-item">
-                <a class="menu-list-link link" href="">Service</a>
-              </li>
-
-              <li class="menu-list-item">
-                <a class="menu-list-link link" href="">Menu</a>
+                <a class="menu-list-link link" href="#service">Service</a>
               </li>
 
               <li class="menu-list-item">
-                <a class="menu-list-link link" href="">Contact</a>
+                <a class="menu-list-link link" href="#menu">Menu</a>
+              </li>
+
+              <li class="menu-list-item">
+                <a class="menu-list-link link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -117,7 +118,7 @@
     </header>
     <main>
       <!--! ======= Hero Section ========= -->
-      <section class="hero">
+      <section class="hero" id="about">
         <div class="container hero-container">
           <h1 class="hero-title">Enjoy Your Favorite Food From Anywhere</h1>
           <div class="hero-subcontainer">
@@ -181,7 +182,7 @@
       </section>
 
       <!--! ======== Offering Section ======= -->
-      <section class="offering">
+      <section class="offering" id="service">
         <div class="container offering-container">
           <div class="pics-container">
             <div class="offering-pic-box">
@@ -270,7 +271,7 @@
       </section>
 
       <!--! ======== Section Favorites ====== -->
-      <section class="favorites">
+      <section class="favorites" id="menu">
         <div class="container">
           <h2 class="favorites-title">Some of Our Favorites</h2>
           <p class="favorites-text">Looking for something delicious?</p>
@@ -403,7 +404,7 @@
       </section>
 
       <!--! ======== Subscribe Section ====== -->
-      <section class="subscribe">
+      <section class="subscribe" id="contact">
         <div class="container subscribe-container">
           <div class="subscribe-picture-box">
             <img
@@ -453,19 +454,19 @@
           <nav class="footer-nav-container">
             <ul class="list footer-links">
               <li class="footer-links-item">
-                <a class="link nav-menu" href="">Home</a>
+                <a class="link nav-menu" href="#home">Home</a>
               </li>
               <li class="footer-links-item">
-                <a class="link nav-menu" href="">About</a>
+                <a class="link nav-menu" href="#about">About</a>
               </li>
               <li class="footer-links-item">
-                <a class="link nav-menu" href="">Service</a>
+                <a class="link nav-menu" href="#service">Service</a>
               </li>
               <li class="footer-links-item">
-                <a class="link nav-menu" href="">Menu</a>
+                <a class="link nav-menu" href="#menu">Menu</a>
               </li>
               <li class="footer-links-item">
-                <a class="link nav-menu" href="">Contact</a>
+                <a class="link nav-menu" href="#contact">Contact</a>
               </li>
             </ul>
           </nav>
