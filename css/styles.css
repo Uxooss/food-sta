@@ -1,6 +1,6 @@
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 :root {
   --color-button-green: #bbf330;
@@ -204,6 +204,33 @@ img {
 
 .menu-list-link:active {
   background-color: var(--color-button-green);
+}
+
+/** GO-TOP Button */
+
+.go-top {
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 24px;
+  color: var(--color-dark-green);
+  border: 1px solid var(--color-text-3);
+  background-color: var(--color-yellow-main);
+  border-radius: 50%;
+  padding: 10px 14px;
+  z-index: 999;
+}
+
+.go-top:hover {
+  color: var(--color-yellow-main);
+  border: 1px solid var(--color-black);
+  background-color: var(--color-dark-green);
+}
+
+.go-top--show {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -495,10 +522,6 @@ img {
   z-index: 500;
 }
 
-.offering-pic-box {
-  position: relative;
-}
-
 .offering-pic-box::after {
   content: '';
   position: absolute;
@@ -615,6 +638,10 @@ img {
 
   .offering-pic-box::after {
     bottom: 35px;
+  }
+
+  .pics-container {
+    position: relative;
   }
 
   .offering-main-pic {
