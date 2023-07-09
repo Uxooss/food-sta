@@ -582,7 +582,7 @@ img {
   fill: var(--color-dark-green);
 }
 
-.offering-icon-box:hover {
+.offering-icon-box.a-dance {
   transform: scale(1.1);
   animation: spin 250ms linear;
   animation-iteration-count: 2;
